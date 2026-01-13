@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wiam Bahri | Game Developer</title>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --primary: #38bdf8;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+
+    body {
+      background: linear-gradient(135deg, #020617, #0f172a);
+      color: var(--text);
+      min-height: 100vh;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 3rem;
+    }
+
+    .logo { font-weight: 700; font-size: 1.2rem; color: var(--primary); }
+
+    .lang-switch {
+      cursor: pointer;
+      padding: 0.4rem 1rem;
+      border-radius: 999px;
+      background: var(--card);
+      color: var(--primary);
+      border: 1px solid var(--primary);
+    }
+
+    main {
+      max-width: 1000px;
+      margin: auto;
+      padding: 3rem 2rem;
+    }
+
+    .hero {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+
+    .hero h1 { font-size: 3rem; }
+    .hero h2 { font-weight: 400; color: var(--muted); margin-bottom: 1rem; }
+
+    .hero .meta {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero .download-cv {
+      margin-top: 1rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0.6rem 1.2rem;
+      border-radius: 999px;
+      border: 1px solid var(--primary);
+      background: var(--card);
+      color: var(--primary);
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    .hero .download-cv:hover {
+      background: var(--primary);
+      color: #020617;
+    }
+
+    section { margin-bottom: 3.5rem; }
+
+    section h3 {
+      font-size: 1.6rem;
+      margin-bottom: 1.2rem;
+      color: var(--primary);
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: var(--card);
+      padding: 1.5rem;
+      border-radius: 1rem;
+      border: 1px solid #1f2933;
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover { transform: translateY(-6px); }
+
+    .card img {
+      width: 100%;
+      border-radius: 0.6rem;
+      margin-bottom: 0.8rem;
+      aspect-ratio: 16/9;
+      object-fit: cover;
+    }
+
+    .card p { color: var(--muted); font-size: 0.95rem; }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    .links a {
+      text-decoration: none;
+      color: var(--text);
+      padding: 0.6rem 1.2rem;
+      border-radius: 999px;
+      background: var(--card);
+      border: 1px solid #1f2933;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .links a i { color: var(--primary); }
+
+    .emails {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .emails a { color: var(--primary); text-decoration: none; }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    [dir="rtl"] {
+      direction: rtl;
+      text-align: right;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">Wiam.dev</div>
+  <button class="lang-switch" onclick="toggleLang()">AR</button>
+</header>
+
+<main id="content">
+
+  <div class="hero">
+    <h1 id="name">Wiam Bahri</h1>
+    <h2 id="title">Game Developer & Data Science Engineering Student</h2>
+    <div class="meta">
+      <span id="age"></span> years old • Annaba, Algeria
+    </div>
+    <p id="bio">
+      I am a third-year Data Science Engineering student and an independent Game Developer.
+      I enjoy creating interactive and emotional experiences using code and creativity.
+    </p>
+
+    <!-- Download CV Button -->
+    <a href="Wiam_Bahri_CV.pdf" class="download-cv" target="_blank">
+      <i class="fas fa-download"></i> Download CV
+    </a>
+  </div>
+
+  <section>
+    <h3 id="projects">Projects</h3>
+    <div class="cards">
+      <div class="card">
+        <img src="gif1.gif">
+        <h4 id="p1">Mobile & PC Games</h4>
+        <p id="p1d">Several Unity games focused on gameplay, story, and mechanics.</p>
+      </div>
+
+      <div class="card">
+        <img src="gif2.gif">
+        <h4 id="p2">Experimental Prototypes</h4>
+        <p id="p2d">Small projects exploring interaction and game feel.</p>
+      </div>
+
+      <div class="card">
+        <img src="gif.gif">
+        <h4 id="p3">Game Systems</h4>
+        <p id="p3d">Custom systems for movement, obstacles, and progression.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h3 id="connect">Connect With Me</h3>
+    <div class="links">
+      <a href="https://www.youtube.com/@devwimo" target="_blank"><i class="fab fa-youtube"></i>YouTube</a>
+      <a href="https://instagram.com/wiam.its.me" target="_blank"><i class="fab fa-instagram"></i>Instagram</a>
+      <a href="https://tiktok.com/@sigma0_0gamer" target="_blank"><i class="fab fa-tiktok"></i>TikTok</a>
+      <a href="https://github.com/wiam-boop" target="_blank"><i class="fab fa-github"></i>GitHub</a>
+      <a href="https://giphy.com/channel/wiam22" target="_blank"><i class="fas fa-image"></i>GIPHY</a>
+      <a href="https://www.linkedin.com/in/wiam-bahri-6575b1317?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a>
+    </div>
+  </section>
+
+  <section class="emails">
+    <p>📧 Academic: <a href="mailto:wiam.bahri@univ-annaba.dz">wiam.bahri@univ-annaba.dz</a></p>
+    <p>📧 Personal: <a href="mailto:bahriwiam339@gmail.com">bahriwiam339@gmail.com</a></p>
+  </section>
+
+</main>
+
+<footer>© 2026 Wiam Bahri – Game Developer</footer>
+
+<script>
+  // Age calculation
+  const birth = new Date(2004, 3, 21);
+  const today = new Date();
+  let age = today.getFullYear() - birth.getFullYear();
+  if (today < new Date(today.getFullYear(), birth.getMonth(), birth.getDate())) age--;
+  document.getElementById("age").textContent = age;
+
+  let isArabic = false;
+
+  function toggleLang() {
+    isArabic = !isArabic;
+    document.documentElement.lang = isArabic ? "ar" : "en";
+    document.body.dir = isArabic ? "rtl" : "ltr";
+    document.querySelector(".lang-switch").textContent = isArabic ? "EN" : "AR";
+
+    if (isArabic) {
+      name.textContent = "وئام بحري";
+      title.textContent = "مبرمجة ألعاب وطالبة هندسة علوم البيانات (سنة ثالثة)";
+      bio.textContent = "أنا طالبة هندسة علوم البيانات في السنة الثالثة ومبرمجة ألعاب مستقلة، أعمل على تطوير ألعاب وتجارب تفاعلية تجمع بين البرمجة والإبداع.";
+      projects.textContent = "المشاريع";
+      p1.textContent = "ألعاب الهاتف والحاسوب";
+      p1d.textContent = "ألعاب مطورة باستخدام Unity مع التركيز على أسلوب اللعب والقصة.";
+      p2.textContent = "نماذج تجريبية";
+      p2d.textContent = "مشاريع صغيرة لتجربة أفكار وميكانيكيات جديدة.";
+      p3.textContent = "أنظمة ألعاب";
+      p3d.textContent = "أنظمة مخصصة للحركة، التفاعل والتقدم.";
+      connect.textContent = "تواصل معي";
+    } else {
+      location.reload();
+    }
+  }
+</script>
+
+</body>
+</html>
