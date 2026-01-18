@@ -58,12 +58,6 @@
     .hero h1 { font-size: 3rem; }
     .hero h2 { font-weight: 400; color: var(--muted); margin-bottom: 1rem; }
 
-    .hero .meta {
-      color: var(--muted);
-      font-size: 0.95rem;
-      margin-bottom: 1rem;
-    }
-
     .hero .download-cv {
       margin-top: 1rem;
       display: inline-flex;
@@ -138,13 +132,15 @@
 
     .links a i { color: var(--primary); }
 
-    .emails {
-      text-align: center;
-      color: var(--muted);
-      font-size: 0.95rem;
+    #contact-note-en, #contact-note-ar {
+      margin-top:1.8rem;
+      padding:1rem;
+      border-radius:0.8rem;
+      background:rgba(56,189,248,0.1);
+      color:var(--primary);
+      font-size:0.9rem;
+      text-align:center;
     }
-
-    .emails a { color: var(--primary); text-decoration: none; }
 
     footer {
       text-align: center;
@@ -172,18 +168,10 @@
   <div class="hero">
     <h1 id="name">Wiam Bahri</h1>
     <h2 id="title">Game Developer & Data Science Engineering Student</h2>
-    <div class="meta">
-      <span id="age"></span> years old • Annaba, Algeria
-    </div>
     <p id="bio">
       I am a third-year Data Science Engineering student and an independent Game Developer.
       I enjoy creating interactive and emotional experiences using code and creativity.
     </p>
-
-    <!-- Download CV Button -->
-    <a href="Wiam_Bahri_CV.pdf" class="download-cv" target="_blank">
-      <i class="fas fa-download"></i> Download CV
-    </a>
   </div>
 
   <section>
@@ -210,24 +198,29 @@
   </section>
 
   <section>
-    <h3 id="connect">Connect With Me</h3>
+    <h3 id="connect">Official Accounts</h3>
     <div class="links">
       <a href="https://www.youtube.com/@devwimo" target="_blank"><i class="fab fa-youtube"></i>YouTube</a>
       <a href="https://instagram.com/wiam.its.me" target="_blank"><i class="fab fa-instagram"></i>Instagram</a>
       <a href="https://tiktok.com/@sigma0_0gamer" target="_blank"><i class="fab fa-tiktok"></i>TikTok</a>
       <a href="https://github.com/wiam-boop" target="_blank"><i class="fab fa-github"></i>GitHub</a>
-      <a href="https://giphy.com/channel/wiam22" target="_blank"><i class="fas fa-image"></i>GIPHY</a>
-      <a href="https://www.linkedin.com/in/wiam-bahri-6575b1317?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a>
-      <a href="https://wiam-boop.itch.io/" target="_blank">
-      <i class="fab fa-itch-io"></i>itch.io
-</a>
-
+      <a href="https://www.linkedin.com/in/wiam-bahri-6575b1317" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a>
+      <a href="https://wiam-boop.itch.io/" target="_blank"><i class="fab fa-itch-io"></i>itch.io</a>
     </div>
-  </section>
 
-  <section class="emails">
-    <p>📧 Academic: <a href="mailto:wiam.bahri@univ-annaba.dz">wiam.bahri@univ-annaba.dz</a></p>
-    <p>📧 Personal: <a href="mailto:bahriwiam339@gmail.com">bahriwiam339@gmail.com</a></p>
+    <div id="contact-note-en">
+      <i class="fas fa-lock"></i>
+      <strong> Important note:</strong><br>
+      I do not accept direct messages on other platforms.<br>
+      For professional or important communication, please contact me exclusively via LinkedIn.
+    </div>
+
+    <div id="contact-note-ar" style="display:none;">
+      <i class="fas fa-lock"></i>
+      <strong> ملاحظة مهمة:</strong><br>
+      لا أستقبل الرسائل المباشرة على المنصات الأخرى.<br>
+      للتواصل المهني أو المهم، يرجى التواصل معي حصريًا عبر لينكدإن.
+    </div>
   </section>
 
 </main>
@@ -235,13 +228,6 @@
 <footer>© 2026 Wiam Bahri – Game Developer</footer>
 
 <script>
-  // Age calculation
-  const birth = new Date(2004, 3, 21);
-  const today = new Date();
-  let age = today.getFullYear() - birth.getFullYear();
-  if (today < new Date(today.getFullYear(), birth.getMonth(), birth.getDate())) age--;
-  document.getElementById("age").textContent = age;
-
   let isArabic = false;
 
   function toggleLang() {
@@ -249,6 +235,9 @@
     document.documentElement.lang = isArabic ? "ar" : "en";
     document.body.dir = isArabic ? "rtl" : "ltr";
     document.querySelector(".lang-switch").textContent = isArabic ? "EN" : "AR";
+
+    document.getElementById('contact-note-en').style.display = isArabic ? 'none' : 'block';
+    document.getElementById('contact-note-ar').style.display = isArabic ? 'block' : 'none';
 
     if (isArabic) {
       name.textContent = "وئام بحري";
@@ -261,13 +250,24 @@
       p2d.textContent = "مشاريع صغيرة لتجربة أفكار وميكانيكيات جديدة.";
       p3.textContent = "أنظمة ألعاب";
       p3d.textContent = "أنظمة مخصصة للحركة، التفاعل والتقدم.";
-      connect.textContent = "تواصل معي";
+      connect.textContent = "حساباتي الرسمية";
     } else {
-      location.reload();
+      name.textContent = "Wiam Bahri";
+      title.textContent = "Game Developer & Data Science Engineering Student";
+      bio.textContent = "I am a third-year Data Science Engineering student and an independent Game Developer. I enjoy creating interactive and emotional experiences using code and creativity.";
+      projects.textContent = "Projects";
+      p1.textContent = "Mobile & PC Games";
+      p1d.textContent = "Several Unity games focused on gameplay, story, and mechanics.";
+      p2.textContent = "Experimental Prototypes";
+      p2d.textContent = "Small projects exploring interaction and game feel.";
+      p3.textContent = "Game Systems";
+      p3d.textContent = "Custom systems for movement, obstacles, and progression.";
+      connect.textContent = "Official Accounts";
     }
   }
 </script>
 
 </body>
 </html>
+
 
