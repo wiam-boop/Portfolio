@@ -20,7 +20,12 @@
       --discord-hover: #4752c4;
     }
 
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
 
     body {
       background: linear-gradient(135deg, #020617, #0f172a);
@@ -35,7 +40,11 @@
       padding: 1.5rem 3rem;
     }
 
-    .logo { font-weight: 700; font-size: 1.2rem; color: var(--primary); }
+    .logo {
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: var(--primary);
+    }
 
     .lang-switch {
       cursor: pointer;
@@ -57,8 +66,15 @@
       margin-bottom: 2.5rem;
     }
 
-    .hero h1 { font-size: 3rem; }
-    .hero h2 { font-weight: 400; color: var(--muted); margin-bottom: 1rem; }
+    .hero h1 {
+      font-size: 3rem;
+    }
+
+    .hero h2 {
+      font-weight: 400;
+      color: var(--muted);
+      margin-bottom: 1rem;
+    }
 
     .hero .download-cv {
       margin-top: 1rem;
@@ -79,7 +95,9 @@
       color: #020617;
     }
 
-    section { margin-bottom: 3.5rem; }
+    section {
+      margin-bottom: 3.5rem;
+    }
 
     section h3 {
       font-size: 1.6rem;
@@ -101,7 +119,9 @@
       transition: transform 0.2s ease;
     }
 
-    .card:hover { transform: translateY(-6px); }
+    .card:hover {
+      transform: translateY(-6px);
+    }
 
     .card img {
       width: 100%;
@@ -111,7 +131,10 @@
       object-fit: cover;
     }
 
-    .card p { color: var(--muted); font-size: 0.95rem; }
+    .card p {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
 
     .links {
       display: flex;
@@ -132,16 +155,19 @@
       gap: 0.6rem;
     }
 
-    .links a i { color: var(--primary); }
+    .links a i {
+      color: var(--primary);
+    }
 
-    #contact-note-en, #contact-note-ar {
-      margin-top:1.8rem;
-      padding:1rem;
-      border-radius:0.8rem;
-      background:rgba(56,189,248,0.1);
-      color:var(--primary);
-      font-size:0.9rem;
-      text-align:center;
+    #contact-note-en,
+    #contact-note-ar {
+      margin-top: 1.8rem;
+      padding: 1rem;
+      border-radius: 0.8rem;
+      background: rgba(56, 189, 248, 0.1);
+      color: var(--primary);
+      font-size: 0.9rem;
+      text-align: center;
     }
 
     /* Discord CTA button */
@@ -169,7 +195,9 @@
       box-shadow: 0 8px 28px rgba(88, 101, 242, 0.55);
     }
 
-    .discord-btn i { font-size: 1.4rem; }
+    .discord-btn i {
+      font-size: 1.4rem;
+    }
 
     .games-btn {
       display: flex;
@@ -195,7 +223,9 @@
       box-shadow: 0 8px 28px rgba(56, 189, 248, 0.5);
     }
 
-    .games-btn i { font-size: 1.4rem; }
+    .games-btn i {
+      font-size: 1.4rem;
+    }
 
     .bot-card {
       background: var(--card);
@@ -211,7 +241,7 @@
       width: 56px;
       height: 56px;
       border-radius: 50%;
-      background: rgba(167,139,250,0.15);
+      background: rgba(167, 139, 250, 0.15);
       color: #a78bfa;
       display: flex;
       align-items: center;
@@ -220,8 +250,15 @@
       font-size: 1.6rem;
     }
 
-    .bot-card h4 { font-size: 1.3rem; margin-bottom: 0.5rem; }
-    .bot-card p { color: var(--muted); margin-bottom: 1.5rem; }
+    .bot-card h4 {
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .bot-card p {
+      color: var(--muted);
+      margin-bottom: 1.5rem;
+    }
 
     .bot-btn {
       display: inline-flex;
@@ -236,7 +273,10 @@
       transition: all 0.2s ease;
     }
 
-    .bot-btn:hover { background: #c4b5fd; transform: translateY(-3px); }
+    .bot-btn:hover {
+      background: #c4b5fd;
+      transform: translateY(-3px);
+    }
 
     footer {
       text-align: center;
@@ -263,140 +303,308 @@
 
   <div class="hero">
     <h1 id="name">Wiam Bahri</h1>
-    <h2 id="title">Data Science Engineering Student (4th/5th Year)</h2>
+
+    <h2 id="title">
+      Data Science Engineering Student (4th/5th Year)
+    </h2>
+
     <p id="bio">
-      I work on a variety of projects that combine programming, logic, and creativity. I enjoy exploring
-      different ideas and turning them into real, working projects. Some of my notable work includes a
-      chatbot I developed myself, along with several games such as EchoLight and Unlucky Walk.
+      I work on a variety of projects that combine programming,
+      logic, and creativity. I enjoy exploring different ideas and
+      turning them into real, working projects. Some of my notable
+      work includes a chatbot I developed myself, along with several
+      games such as EchoLight and Unlucky Walk.
     </p>
   </div>
 
   <section>
     <h3 id="projects">Projects</h3>
+
     <div class="cards">
+
       <div class="card">
         <img src="gif1.gif">
         <h4 id="p1">Mobile & PC Games</h4>
-        <p id="p1d">Several Unity games focused on gameplay, story, and mechanics.</p>
+        <p id="p1d">
+          Several Unity games focused on gameplay, story, and mechanics.
+        </p>
       </div>
 
       <div class="card">
         <img src="gif2.gif">
         <h4 id="p2">Experimental Prototypes</h4>
-        <p id="p2d">Small projects exploring interaction and game feel.</p>
+        <p id="p2d">
+          Small projects exploring interaction and game feel.
+        </p>
       </div>
 
       <div class="card">
         <img src="gif.gif">
         <h4 id="p3">Game Systems</h4>
-        <p id="p3d">Custom systems for movement, obstacles, and progression.</p>
+        <p id="p3d">
+          Custom systems for movement, obstacles, and progression.
+        </p>
       </div>
+
     </div>
   </section>
 
   <section>
     <h3 id="bot-heading">Talk to my chatbot</h3>
+
     <div class="bot-card">
-      <div class="icon"><i class="fas fa-robot"></i></div>
-      <h4 id="bot-title">Chat with my Bot</h4>
-      <p id="bot-desc">Have a question or want to chat? My personal chatbot is ready to talk with you anytime.</p>
-      <a href="https://web-production-95779.up.railway.app/" target="_blank" class="bot-btn">
+
+      <div class="icon">
+        <i class="fas fa-robot"></i>
+      </div>
+
+      <h4 id="bot-title">
+        Chat with my Bot
+      </h4>
+
+      <p id="bot-desc">
+        Have a question or want to chat?
+        My personal chatbot is ready to talk with you anytime.
+      </p>
+
+      <a
+        href="https://web-production-95779.up.railway.app/"
+        target="_blank"
+        class="bot-btn"
+      >
         <i class="fas fa-comment-dots"></i>
         <span id="bot-btn-text">Start chatting</span>
       </a>
+
     </div>
   </section>
 
   <section>
+
     <h3 id="connect">Official Accounts</h3>
+
     <div class="links">
-      <a href="https://www.youtube.com/@wiamdev" target="_blank"><i class="fab fa-youtube"></i>YouTube</a>
-      <a href="https://instagram.com/wiam.dev?igsh=MWZmZmFycTcyaHc5OQ==" target="_blank"><i class="fab fa-instagram"></i>Instagram</a>
-      <a href="https://tiktok.com/@sigma0_0gamer" target="_blank"><i class="fab fa-tiktok"></i>TikTok</a>
-      <a href="https://github.com/wiam-boop" target="_blank"><i class="fab fa-github"></i>GitHub</a>
-      <a href="https://www.linkedin.com/in/wiam-bahri-6575b1317" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a>
-      <a href="https://wiam-boop.itch.io/" target="_blank"><i class="fab fa-itch-io"></i>itch.io</a>
+
+      <a href="https://www.youtube.com/@wiamdev" target="_blank">
+        <i class="fab fa-youtube"></i>
+        YouTube
+      </a>
+
+      <a href="https://instagram.com/wiam.dev?igsh=MWZmZmFycTcyaHc5OQ==" target="_blank">
+        <i class="fab fa-instagram"></i>
+        Instagram
+      </a>
+
+      <a href="https://tiktok.com/@sigma0_0gamer" target="_blank">
+        <i class="fab fa-tiktok"></i>
+        TikTok
+      </a>
+
+      <a href="https://github.com/wiam-boop" target="_blank">
+        <i class="fab fa-github"></i>
+        GitHub
+      </a>
+
+      <a href="https://www.linkedin.com/in/wiam-bahri-6575b1317" target="_blank">
+        <i class="fab fa-linkedin"></i>
+        LinkedIn
+      </a>
+
+      <a href="https://wiam-boop.itch.io/" target="_blank">
+        <i class="fab fa-itch-io"></i>
+        itch.io
+      </a>
+
     </div>
 
     <div id="contact-note-en">
+
       <i class="fas fa-lock"></i>
+
       <strong> Important note:</strong><br>
+
       I do not accept direct messages on other platforms.<br>
-      For professional or important communication, please contact me exclusively via LinkedIn.
+
+      For professional or important communication,
+      please contact me exclusively via LinkedIn.
+
     </div>
 
     <div id="contact-note-ar" style="display:none;">
+
       <i class="fas fa-lock"></i>
+
       <strong> ملاحظة مهمة:</strong><br>
+
       لا أستقبل الرسائل المباشرة على المنصات الأخرى.<br>
+
       للتواصل المهني أو المهم، يرجى التواصل معي حصريًا عبر لينكدإن.
+
     </div>
 
     <a href="games.html" class="games-btn">
+
       <i class="fas fa-gamepad"></i>
-      <span id="games-label">Play My Games</span>
+
+      <span id="games-label">
+        Play My Games
+      </span>
+
     </a>
 
-    <a href="https://discord.gg/YAP3ny7CE" target="_blank" class="discord-btn">
+    <a
+      href="https://discord.gg/YAP3ny7CE"
+      target="_blank"
+      class="discord-btn"
+    >
+
       <i class="fab fa-discord"></i>
-      <span id="discord-label">Join our Discord</span>
+
+      <span id="discord-label">
+        Join our Discord
+      </span>
+
     </a>
+
   </section>
 
 </main>
 
-<footer>© 2026 Wiam Bahri – Game Developer</footer>
+<footer>
+  © 2026 Wiam Bahri – Game Developer
+</footer>
 
 <script>
+
   let isArabic = false;
 
   function toggleLang() {
-    isArabic = !isArabic;
-    document.documentElement.lang = isArabic ? "ar" : "en";
-    document.body.dir = isArabic ? "rtl" : "ltr";
-    document.querySelector(".lang-switch").textContent = isArabic ? "EN" : "AR";
 
-    document.getElementById('contact-note-en').style.display = isArabic ? 'none' : 'block';
-    document.getElementById('contact-note-ar').style.display = isArabic ? 'block' : 'none';
+    isArabic = !isArabic;
+
+    document.documentElement.lang =
+      isArabic ? "ar" : "en";
+
+    document.body.dir =
+      isArabic ? "rtl" : "ltr";
+
+    document.querySelector(".lang-switch").textContent =
+      isArabic ? "EN" : "AR";
+
+    document.getElementById('contact-note-en').style.display =
+      isArabic ? 'none' : 'block';
+
+    document.getElementById('contact-note-ar').style.display =
+      isArabic ? 'block' : 'none';
+
 
     if (isArabic) {
+
       name.textContent = "وئام بحري";
-      title.textContent = "طالبة هندسة علوم البيانات (السنة الرابعة من خمس)";
-      bio.textContent = "أعمل على مجموعة متنوعة من المشاريع التي تجمع بين البرمجة والمنطق والإبداع، وأحب تجربة أفكار مختلفة وتحويلها إلى مشاريع حقيقية. من أبرز أعمالي شات بوت طورته بنفسي، بالإضافة إلى عدة ألعاب مثل EchoLight وUnlucky Walk.";
+
+      title.textContent =
+        "طالبة هندسة علوم البيانات (السنة الرابعة من خمس)";
+
+      bio.textContent =
+        "أعمل على مجموعة متنوعة من المشاريع التي تجمع بين البرمجة والمنطق والإبداع، وأحب تجربة أفكار مختلفة وتحويلها إلى مشاريع حقيقية. من أبرز أعمالي شات بوت طورته بنفسي، بالإضافة إلى عدة ألعاب مثل EchoLight و Unlucky Walk.";
+
       projects.textContent = "المشاريع";
-      p1.textContent = "ألعاب الهاتف والحاسوب";
-      p1d.textContent = "ألعاب مطورة باستخدام Unity مع التركيز على أسلوب اللعب والقصة.";
-      p2.textContent = "نماذج تجريبية";
-      p2d.textContent = "مشاريع صغيرة لتجربة أفكار وميكانيكيات جديدة.";
-      p3.textContent = "أنظمة ألعاب";
-      p3d.textContent = "أنظمة مخصصة للحركة، التفاعل والتقدم.";
-      connect.textContent = "حساباتي الرسمية";
-      document.getElementById('discord-label').textContent = "انضم إلى ديسكورد";
-      document.getElementById('games-label').textContent = "العب ألعابي";
-      document.getElementById('bot-heading').textContent = "تحدث مع الشات بوت";
-      document.getElementById('bot-title').textContent = "تحدث مع البوت الخاص بي";
-      document.getElementById('bot-desc').textContent = "عندك سؤال أو تحب تتحدث؟ الشات بوت الخاص بي جاهز للتحدث معك في أي وقت.";
-      document.getElementById('bot-btn-text').textContent = "ابدأ المحادثة";
+
+      p1.textContent =
+        "ألعاب الهاتف والحاسوب";
+
+      p1d.textContent =
+        "ألعاب مطورة باستخدام Unity مع التركيز على أسلوب اللعب والقصة.";
+
+      p2.textContent =
+        "نماذج تجريبية";
+
+      p2d.textContent =
+        "مشاريع صغيرة لتجربة أفكار وميكانيكيات جديدة.";
+
+      p3.textContent =
+        "أنظمة ألعاب";
+
+      p3d.textContent =
+        "أنظمة مخصصة للحركة، التفاعل والتقدم.";
+
+      connect.textContent =
+        "حساباتي الرسمية";
+
+      document.getElementById('discord-label').textContent =
+        "انضم إلى ديسكورد";
+
+      document.getElementById('games-label').textContent =
+        "العب ألعابي";
+
+      document.getElementById('bot-heading').textContent =
+        "تحدث مع الشات بوت";
+
+      document.getElementById('bot-title').textContent =
+        "تحدث مع البوت الخاص بي";
+
+      document.getElementById('bot-desc').textContent =
+        "عندك سؤال أو تحب تتحدث؟ الشات بوت الخاص بي جاهز للتحدث معك في أي وقت.";
+
+      document.getElementById('bot-btn-text').textContent =
+        "ابدأ المحادثة";
+
     } else {
-      name.textContent = "Wiam Bahri";
-      title.textContent = "Data Science Engineering Student (4th/5th Year)";
-      bio.textContent = "I build a wide range of projects that combine data, logic, and creativity — from AI-driven tools to interactive experiences. Among my notable work is a custom-built chatbot, alongside several games including EchoLight and Unlucky Walk.";
-      projects.textContent = "Projects";
-      p1.textContent = "Mobile & PC Games";
-      p1d.textContent = "Several Unity games focused on gameplay, story, and mechanics.";
-      p2.textContent = "Experimental Prototypes";
-      p2d.textContent = "Small projects exploring interaction and game feel.";
-      p3.textContent = "Game Systems";
-      p3d.textContent = "Custom systems for movement, obstacles, and progression.";
-      connect.textContent = "Official Accounts";
-      document.getElementById('discord-label').textContent = "Join our Discord";
-      document.getElementById('games-label').textContent = "Play My Games";
-      document.getElementById('bot-heading').textContent = "Talk to my chatbot";
-      document.getElementById('bot-title').textContent = "Chat with my Bot";
-      document.getElementById('bot-desc').textContent = "Have a question or want to chat? My personal chatbot is ready to talk with you anytime.";
-      document.getElementById('bot-btn-text').textContent = "Start chatting";
+
+      name.textContent =
+        "Wiam Bahri";
+
+      title.textContent =
+        "Data Science Engineering Student (4th/5th Year)";
+
+      bio.textContent =
+        "I work on a variety of projects that combine programming, logic, and creativity. I enjoy exploring different ideas and turning them into real, working projects. Some of my notable work includes a chatbot I developed myself, along with several games such as EchoLight and Unlucky Walk.";
+
+      projects.textContent =
+        "Projects";
+
+      p1.textContent =
+        "Mobile & PC Games";
+
+      p1d.textContent =
+        "Several Unity games focused on gameplay, story, and mechanics.";
+
+      p2.textContent =
+        "Experimental Prototypes";
+
+      p2d.textContent =
+        "Small projects exploring interaction and game feel.";
+
+      p3.textContent =
+        "Game Systems";
+
+      p3d.textContent =
+        "Custom systems for movement, obstacles, and progression.";
+
+      connect.textContent =
+        "Official Accounts";
+
+      document.getElementById('discord-label').textContent =
+        "Join our Discord";
+
+      document.getElementById('games-label').textContent =
+        "Play My Games";
+
+      document.getElementById('bot-heading').textContent =
+        "Talk to my chatbot";
+
+      document.getElementById('bot-title').textContent =
+        "Chat with my Bot";
+
+      document.getElementById('bot-desc').textContent =
+        "Have a question or want to chat? My personal chatbot is ready to talk with you anytime.";
+
+      document.getElementById('bot-btn-text').textContent =
+        "Start chatting";
     }
+
   }
+
 </script>
 
 </body>
